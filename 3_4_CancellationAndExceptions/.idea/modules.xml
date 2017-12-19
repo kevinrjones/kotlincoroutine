@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/CancellationAndExceptions.iml" filepath="$PROJECT_DIR$/.idea/modules/CancellationAndExceptions.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/CancellationAndExceptions_main.iml" filepath="$PROJECT_DIR$/.idea/modules/CancellationAndExceptions_main.iml" group="CancellationAndExceptions" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/CancellationAndExceptions_test.iml" filepath="$PROJECT_DIR$/.idea/modules/CancellationAndExceptions_test.iml" group="CancellationAndExceptions" />
+    </modules>
+  </component>
+</project>
