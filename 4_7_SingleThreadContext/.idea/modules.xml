@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SingleThreadContext.iml" filepath="$PROJECT_DIR$/.idea/modules/SingleThreadContext.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SingleThreadContext_main.iml" filepath="$PROJECT_DIR$/.idea/modules/SingleThreadContext_main.iml" group="SingleThreadContext" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SingleThreadContext_test.iml" filepath="$PROJECT_DIR$/.idea/modules/SingleThreadContext_test.iml" group="SingleThreadContext" />
+    </modules>
+  </component>
+</project>

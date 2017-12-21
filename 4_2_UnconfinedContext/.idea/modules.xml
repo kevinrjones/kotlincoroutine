@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/UnconfinedContext.iml" filepath="$PROJECT_DIR$/.idea/modules/UnconfinedContext.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/UnconfinedContext_main.iml" filepath="$PROJECT_DIR$/.idea/modules/UnconfinedContext_main.iml" group="UnconfinedContext" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/UnconfinedContext_test.iml" filepath="$PROJECT_DIR$/.idea/modules/UnconfinedContext_test.iml" group="UnconfinedContext" />
+    </modules>
+  </component>
+</project>
