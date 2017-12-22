@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/AsyncAwait.iml" filepath="$PROJECT_DIR$/.idea/modules/AsyncAwait.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/AsyncAwait_main.iml" filepath="$PROJECT_DIR$/.idea/modules/AsyncAwait_main.iml" group="AsyncAwait" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/AsyncAwait_test.iml" filepath="$PROJECT_DIR$/.idea/modules/AsyncAwait_test.iml" group="AsyncAwait" />
+    </modules>
+  </component>
+</project>
