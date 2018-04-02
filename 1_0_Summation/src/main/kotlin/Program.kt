@@ -1,9 +1,10 @@
+import kotlin.system.measureTimeMillis
 
 val SEQUENTIAL_THRESHOLD = 5000
 
 fun compute(array: IntArray, low: Int, high: Int): Long {
 
-    println("low: $low, high: $high  on ${Thread.currentThread().name}")
+//    println("low: $low, high: $high  on ${Thread.currentThread().name}")
 
     return if (high - low <= SEQUENTIAL_THRESHOLD) {
         (low until high)
@@ -21,16 +22,23 @@ fun main(args: Array<String>)  {
 
     val list = mutableListOf<Int>()
 
-    var limit = 200_000
+    var limit = 20_000_000
 
     while (limit > 0) {
         list.add(limit--)
     }
 
-    val result = compute(list.toIntArray(), 0, list.toIntArray().size)
+    var result = 0L
+    var time = measureTimeMillis {
+        result = compute(list.toIntArray(), 0, list.toIntArray().size)
+    }
 
+    result = 0L
+    time = measureTimeMillis {
+        result = compute(list.toIntArray(), 0, list.toIntArray().size)
+    }
 
-    print(result)
+    print("$result in ${time}ms")
 
 }
 

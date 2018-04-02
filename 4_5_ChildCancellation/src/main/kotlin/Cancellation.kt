@@ -1,6 +1,43 @@
 import kotlinx.coroutines.experimental.*
 
 // 2. Point of this is to show that can cancel the children without the parents
+fun main(args: Array<String>) = runBlocking {
+    var inner: Job? = null
+
+    val outer = launch {
+        try {
+            inner = launch(coroutineContext) {
+                try {
+                    repeat(2000) {
+                        print(".")
+                        delay(10)
+                    }
+                } catch (ex: Exception) {
+                    println()
+                    println("In inner catch")
+                } finally {
+                    println("In inner finally")
+                }
+            }
+        } catch (ex: CancellationException) {
+            println("In outer catch")
+        } finally {
+            println("In outer finally")
+        }
+    }
+
+    delay(200)
+    outer.cancelChildren()
+    outer.join()
+    delay(4000)
+    println()
+    println("inner.isCancelled? ${inner?.isCancelled}")
+    println("inner.isCompleted? ${inner?.isCompleted}")
+    println("outer.isCancelled? ${outer.isCancelled}")
+}
+
+
+// 3. add the delay (without try catch around it)
 //fun main(args: Array<String>) = runBlocking {
 //    var inner: Job? = null
 //    val outer = launch {
@@ -9,43 +46,7 @@ import kotlinx.coroutines.experimental.*
 //                try {
 //                    repeat(2000) {
 //                        print(".")
-//                        delay(1)
-//                    }
-//                } catch (ex: Exception) {
-//                    println()
-//                    println("In inner catch")
-//                } finally {
-//                    println("In inner finally")
-//                }
-//            }
-//        } catch (ex: CancellationException) {
-//            println("In outer catch")
-//        } finally {
-//            println("In outer finally")
-//        }
-//    }
-//
-//    delay(200)
-//    outer.cancelChildren()
-//    outer.join()
-//    delay(4000)
-//    println()
-//    println("inner.isCancelled? ${inner?.isCancelled}")
-//    println("inner.isCompleted? ${inner?.isCompleted}")
-//    println("outer.isCancelled? ${outer.isCancelled}")
-//}
-
-
-// 3. add the delay (without try catch
-//fun main(args: Array<String>) = runBlocking {
-//    var inner: Job? = null
-//    val outer = launch {
-//        try {
-//            inner = launch(coroutineContext) {
-//                try {
-//                    repeat(2000) {
-//                        print(".")
-//                        delay(1)
+//                        delay(10)
 //                    }
 //                } catch (ex: Exception) {
 //                    println()
@@ -85,7 +86,7 @@ import kotlinx.coroutines.experimental.*
 //                try {
 //                    repeat(2000) {
 //                        print(".")
-//                        delay(1)
+//                        delay(10)
 //                    }
 //                } catch (ex: Exception) {
 //                    println()

@@ -1,13 +1,12 @@
 
 import java.util.concurrent.ForkJoinPool
 import java.util.concurrent.RecursiveTask
+import kotlin.system.measureTimeMillis
 
 
 internal class Sum(private var array: IntArray, private var low: Int, private var high: Int) : RecursiveTask<Long>() {
 
     override fun compute(): Long {
-        println("low: $low, high: $high  on ${Thread.currentThread().name}")
-
         return if (high - low <= SEQUENTIAL_THRESHOLD) {
             (low until high)
                     .map { array[it].toLong() }
@@ -35,14 +34,22 @@ internal class Sum(private var array: IntArray, private var low: Int, private va
 fun main(args: Array<String>) {
     val list = mutableListOf<Int>()
 
-    var limit = 200_000
+    var limit = 20_000_000
 
     while (limit > 0) {
         list.add(limit--)
     }
 
-    val result = Sum.sumArray(list.toIntArray())
+    var result = 0L
+    var time = measureTimeMillis {
+        result = Sum.sumArray(list.toIntArray())
+    }
 
+    result = 0L
+    time = measureTimeMillis {
+        result = Sum.sumArray(list.toIntArray())
+    }
 
-    print(result)
+    print("$result in ${time}ms")
+
 }

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/9_xx_GitListRepos.iml" filepath="$PROJECT_DIR$/9_xx_GitListRepos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/9_xx_GitListRepos_main.iml" filepath="$PROJECT_DIR$/.idea/modules/9_xx_GitListRepos_main.iml" group="9_xx_GitListRepos" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/9_xx_GitListRepos_test.iml" filepath="$PROJECT_DIR$/.idea/modules/9_xx_GitListRepos_test.iml" group="9_xx_GitListRepos" />
+    </modules>
+  </component>
+</project>

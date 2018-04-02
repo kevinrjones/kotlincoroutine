@@ -6,7 +6,7 @@ import kotlinx.coroutines.experimental.*
 fun main(args: Array<String>) = runBlocking {
     var inner: Job? = null
     val outer = launch {
-        launch(coroutineContext) {
+        launch {
             repeat(2000) {
                 print(".")
                 delay(1)
@@ -17,3 +17,19 @@ fun main(args: Array<String>) = runBlocking {
     outer.join()
     println("Finished")
 }
+
+ //1.a then run with a coroutineContext
+//fun main(args: Array<String>) = runBlocking {
+//    var inner: Job? = null
+//    val outer = launch {
+//        launch(coroutineContext) {
+//            repeat(2000) {
+//                print(".")
+//                delay(1)
+//            }
+//        }
+//    }
+//
+//    outer.join()
+//    println("Finished")
+//}

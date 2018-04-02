@@ -1,3 +1,4 @@
+import kotlinx.coroutines.experimental.delay
 import kotlinx.coroutines.experimental.launch
 import java.util.concurrent.atomic.AtomicInteger
 import kotlin.concurrent.thread
@@ -8,9 +9,10 @@ fun main(args: Array<String>)  {
 
     // 1. Using threads
 
-    for (i in 1..150_000) {
+    for (i in 1..15_000) {
         thread(start = true) {
             result.getAndIncrement()
+            Thread.sleep(10)
         }
     }
 
@@ -25,6 +27,7 @@ fun main(args: Array<String>)  {
     for (i in 1..1_500_000) {
         launch {
             result.getAndIncrement()
+            delay(0)
         }
     }
 

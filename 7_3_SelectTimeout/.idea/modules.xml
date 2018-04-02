@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/7_3_SelectTimeout.iml" filepath="$PROJECT_DIR$/7_3_SelectTimeout.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/7_3_SelectTimeout_main.iml" filepath="$PROJECT_DIR$/.idea/modules/7_3_SelectTimeout_main.iml" group="7_3_SelectTimeout" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/7_3_SelectTimeout_test.iml" filepath="$PROJECT_DIR$/.idea/modules/7_3_SelectTimeout_test.iml" group="7_3_SelectTimeout" />
+    </modules>
+  </component>
+</project>

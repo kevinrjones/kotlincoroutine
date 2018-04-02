@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/7_1_Actor_Counter.iml" filepath="$PROJECT_DIR$/7_1_Actor_Counter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/7_1_Actor_Counter_main.iml" filepath="$PROJECT_DIR$/.idea/modules/7_1_Actor_Counter_main.iml" group="7_1_Actor_Counter" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/7_1_Actor_Counter_test.iml" filepath="$PROJECT_DIR$/.idea/modules/7_1_Actor_Counter_test.iml" group="7_1_Actor_Counter" />
+    </modules>
+  </component>
+</project>

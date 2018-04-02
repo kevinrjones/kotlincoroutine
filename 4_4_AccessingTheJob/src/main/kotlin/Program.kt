@@ -1,4 +1,5 @@
 import kotlinx.coroutines.experimental.*
+import kotlin.coroutines.experimental.coroutineContext
 
 fun main(args: Array<String>) = runBlocking {
     val job = launch {
@@ -14,3 +15,8 @@ fun main(args: Array<String>) = runBlocking {
 
     job.join()
 }
+
+suspend fun doWork() {
+    println("isActive? ${coroutineContext[Job]!!.isActive}")
+}
+

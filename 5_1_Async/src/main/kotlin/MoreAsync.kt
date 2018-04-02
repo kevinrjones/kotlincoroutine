@@ -27,7 +27,7 @@ suspend fun doWork(msg: String): Int {
     return 42
 }
 
-public fun log(msg: String) {
+fun log(msg: String) {
     println("$msg in ${Thread.currentThread().name}")
 }
 

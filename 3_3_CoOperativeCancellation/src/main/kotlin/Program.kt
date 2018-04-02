@@ -7,7 +7,7 @@ fun main(args: Array<String>) = runBlocking() {
         // 1. non-cooperative, no cancellation
         //doWorkNonCooperative()
         // 2. WOrk and yield
-        // doWorkAndYield()
+        //doWorkAndYield()
         // 3. Checking state
         doWorkAndCheck()
     }

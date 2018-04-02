@@ -5,7 +5,7 @@ import kotlinx.coroutines.experimental.runBlocking
 
 fun main(args: Array<String>) = runBlocking {
 
-    var job = launch {
+    val job = launch {
         delay(1000)
         println("World")
     }

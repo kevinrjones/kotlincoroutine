@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ClosingChannels.iml" filepath="$PROJECT_DIR$/.idea/modules/ClosingChannels.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ClosingChannels_main.iml" filepath="$PROJECT_DIR$/.idea/modules/ClosingChannels_main.iml" group="ClosingChannels" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ClosingChannels_test.iml" filepath="$PROJECT_DIR$/.idea/modules/ClosingChannels_test.iml" group="ClosingChannels" />
+    </modules>
+  </component>
+</project>

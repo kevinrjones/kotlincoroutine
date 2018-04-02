@@ -1,12 +1,13 @@
 import kotlinx.coroutines.experimental.async
 import kotlinx.coroutines.experimental.runBlocking
+import kotlin.system.measureTimeMillis
 
 
 val SEQUENTIAL_THRESHOLD = 5000
 
 suspend fun compute(array: IntArray, low: Int, high: Int): Long {
 
-    println("low: $low, high: $high  on ${Thread.currentThread().name}")
+//    println("low: $low, high: $high  on ${Thread.currentThread().name}")
 
     return if (high - low <= SEQUENTIAL_THRESHOLD) {
         (low until high)
@@ -14,7 +15,7 @@ suspend fun compute(array: IntArray, low: Int, high: Int): Long {
                 .sum()
     } else {
         val mid = low + (high - low) / 2
-        val left = async {compute(array, low, mid)}
+        val left = async { compute(array, low, mid) }
         val right = compute(array, mid, high)
         return left.await() + right
     }
@@ -24,13 +25,22 @@ fun main(args: Array<String>) = runBlocking {
 
     val list = mutableListOf<Int>()
 
-    var limit = 200_000
+    var limit = 20_000_000
 
     while (limit > 0) {
         list.add(limit--)
     }
 
-    val result = compute(list.toIntArray(), 0, list.toIntArray().size)
+    var result = 0L
+    var time = measureTimeMillis {
+        result = compute(list.toIntArray(), 0, list.toIntArray().size)
+    }
 
-    print(result)
+    result = 0L
+    time = measureTimeMillis {
+        result = compute(list.toIntArray(), 0, list.toIntArray().size)
+    }
+
+    print("$result in ${time}ms")
+
 }

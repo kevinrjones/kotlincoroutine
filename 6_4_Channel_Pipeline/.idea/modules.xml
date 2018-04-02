@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Channel_Pipeline.iml" filepath="$PROJECT_DIR$/.idea/modules/Channel_Pipeline.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Channel_Pipeline_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Channel_Pipeline_main.iml" group="Channel_Pipeline" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Channel_Pipeline_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Channel_Pipeline_test.iml" group="Channel_Pipeline" />
+    </modules>
+  </component>
+</project>

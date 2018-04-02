@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Channel_Summation.iml" filepath="$PROJECT_DIR$/.idea/modules/Channel_Summation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Channel_Summation_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Channel_Summation_main.iml" group="Channel_Summation" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Channel_Summation_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Channel_Summation_test.iml" group="Channel_Summation" />
+    </modules>
+  </component>
+</project>

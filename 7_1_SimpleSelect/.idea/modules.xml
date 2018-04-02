@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/7_1_SimpleSelect.iml" filepath="$PROJECT_DIR$/7_1_SimpleSelect.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/7_1_SimpleSelect_main.iml" filepath="$PROJECT_DIR$/.idea/modules/7_1_SimpleSelect_main.iml" group="7_1_SimpleSelect" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/7_1_SimpleSelect_test.iml" filepath="$PROJECT_DIR$/.idea/modules/7_1_SimpleSelect_test.iml" group="7_1_SimpleSelect" />
+    </modules>
+  </component>
+</project>

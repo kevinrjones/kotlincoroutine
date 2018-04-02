@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/7_4_Actor_CalculatePi.iml" filepath="$PROJECT_DIR$/7_4_Actor_CalculatePi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/7_4_Actor_CalculatePi_main.iml" filepath="$PROJECT_DIR$/.idea/modules/7_4_Actor_CalculatePi_main.iml" group="7_4_Actor_CalculatePi" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/7_4_Actor_CalculatePi_test.iml" filepath="$PROJECT_DIR$/.idea/modules/7_4_Actor_CalculatePi_test.iml" group="7_4_Actor_CalculatePi" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,41 @@
+buildscript {
+    ext.kotlin_version = '1.2.30'
+    ext.kotlin_coroutines_version = '0.22.5'
+    ext.tornadofx_version = '1.7.15'
+    ext.kotlin_coroutines_javafx_version = '0.22.5'
+
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+group 'com.rsk'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'kotlin'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
+    compile "org.jetbrains.kotlinx:kotlinx-coroutines-core:$kotlin_coroutines_version"
+    compile "org.jetbrains.kotlinx:kotlinx-coroutines-javafx:$kotlin_coroutines_javafx_version"
+    compile "no.tornado:tornadofx:$tornadofx_version"
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
+
+compileKotlin {
+    kotlinOptions.jvmTarget = "1.8"
+}
+
+compileTestKotlin {
+    kotlinOptions.jvmTarget = "1.8"
+}
